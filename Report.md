@@ -57,6 +57,7 @@ Lab1 CO2 Variance: 29.763965249291942
 ```
 
 Graphs:
+
 ![office temperature](https://github.com/blivney/2020-sensor-miniproject/blob/master/images/office%20temperature.png)
 ![office occupancy](https://github.com/blivney/2020-sensor-miniproject/blob/master/images/office%20occupancy.png)
 ![office co2](https://github.com/blivney/2020-sensor-miniproject/blob/master/images/office%20co2.png)
