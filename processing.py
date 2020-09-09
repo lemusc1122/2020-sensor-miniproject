@@ -45,7 +45,7 @@ def printResults(officetemps, lab1temps, class1temps, officeocc, lab1occ, class1
     print("Lab1 Temperature Variance: " + str(numpy.var(lab1temps)))
     print("Class1 Temperature Mean: " + str(numpy.mean(class1temps)))
     print("Class1 Temperature Median: " + str(numpy.median(class1temps)))
-    print("Lab1 Temperature Variance: " + str(numpy.var(class1temps)))
+    print("Class1 Temperature Variance: " + str(numpy.var(class1temps)))
     print("")
     print("Office Occupancy Mean: " + str(numpy.mean(officeocc)))
     print("Office Occupancy Median: " + str(numpy.median(officeocc)))
@@ -55,7 +55,7 @@ def printResults(officetemps, lab1temps, class1temps, officeocc, lab1occ, class1
     print("Lab1 Occupancy Variance: " + str(numpy.var(lab1occ)))
     print("Class1 Occupancy Mean: " + str(numpy.mean(class1occ)))
     print("Class1 Occupancy Median: " + str(numpy.median(class1occ)))
-    print("Lab1 Occupancy Variance: " + str(numpy.var(class1occ)))
+    print("Class1 Occupancy Variance: " + str(numpy.var(class1occ)))
     print("")
     print("Office CO2 Mean: " + str(numpy.mean(officeco2)))
     print("Office CO2 Median: " + str(numpy.median(officeco2)))
@@ -65,7 +65,7 @@ def printResults(officetemps, lab1temps, class1temps, officeocc, lab1occ, class1
     print("Lab1 CO2 Variance: " + str(numpy.var(lab1co2)))
     print("Class1 CO2 Mean: " + str(numpy.mean(class1co2)))
     print("Class1 CO2 Median: " + str(numpy.median(class1co2)))
-    print("Lab1 CO2 Variance: " + str(numpy.var(class1co2)))
+    print("Class1 CO2 Variance: " + str(numpy.var(class1co2)))
 
 
 
