@@ -109,6 +109,10 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     newlab1temps = [i for i in lab1temps if i<(lab1tempsMean + lab1tempsStd) and i>(lab1tempsMean - lab1tempsStd)]
     newclass1temps = [i for i in class1temps if i<(class1tempsMean + class1tempsStd) and i>(class1tempsMean - class1tempsStd)]
     
+    officetempanomalies = [i for i in officetemps if i >= (officetempsMean + officetempsStd) or i <=(officetempsMean - officetempsStd)]
+    lab1tempanomalies = [i for i in lab1temps if i >= (lab1tempsMean + lab1tempsStd) or i <= (lab1tempsMean - lab1tempsStd)]
+    class1tempanomalies = [i for i in class1temps if i >= (class1tempsMean + class1tempsStd) or i <= (class1tempsMean - class1tempsStd)]
+    
     print("Number of data for new office list " + str(len(newofficetemps)))
     print("Numbeer of data for new lab1 list " + str(len(newlab1temps)))
     print("Number of data for new class1 list " + str(len(newclass1temps)))
@@ -124,6 +128,20 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     print("New class1 temperature mean " + str(numpy.mean(newclass1temps)))
     print("New class1 temperature median " + str(numpy.median(newclass1temps)))
     print("New class1 temperature variance " + str(numpy.var(newclass1temps)))
+    print("")
+    print('Anomalous data written to "anomalies.txt"')
+    
+    file = open("anomalies.txt", mode = "w")
+    file.write("Office:\n")
+    for l in officetempanomalies:
+        file.write(str(l) + "\n")
+    file.write("Lab1:\n")
+    for l in lab1tempanomalies:
+        file.write(str(l) + "\n")
+    file.write("Class1:\n")
+    for l in class1tempanomalies:
+        file.write(str(l) + "\n")
+    file.close(
     
 
 def plotData(data, sensor, room, col, x_label):
