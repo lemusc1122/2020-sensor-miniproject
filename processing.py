@@ -91,7 +91,28 @@ def processData(data):
     class1co2 = removeNaN(data, "co2", "class1")
 
     printResults(officetemps, lab1temps, class1temps, officeocc, lab1occ, class1occ, officeco2, lab1co2, class1co2)
-    
+    anomalyAlgorithm(officetemps, lab1temps, class1temps)
+ 
+# runs through lists to detect what values are in appropriate range
+def anomalyAlgorithm(officetemps, lab1temps, class1temps):
+    newofficetemps = [i for i in officetemps if i<22.5 and i>18.5]
+    newlab1temps = [i for i in lab1temps if i<22 and i>18]
+    newclass1temps = [i for i in class1temps if i<22 and i>18]
+    print("Number of data for new office list " + str(len(newofficetemps)))
+    print("Numbeer of data for new lab1 list " + str(len(newlab1temps)))
+    print("Number of data for new class1 list " + str(len(newclass1temps)))
+    print("")
+    print("New office temperature mean " + str(numpy.mean(newofficetemps)))
+    print("New office temperature median " + str(numpy.median(newofficetemps)))
+    print("New office temperature variance " + str(numpy.var(newofficetemps)))
+    print("")
+    print("New lab1 temperature mean " + str(numpy.mean(newlab1temps)))
+    print("New lab1 temperaturee median " + str(numpy.median(newlab1temps)))
+    print("New lab1 temperature variance " + str(numpy.var(newlab1temps)))
+    print("")
+    print("New class1 temperature mean " + str(numpy.mean(newclass1temps)))
+    print("New class1 temperature median " + str(numpy.median(newclass1temps)))
+    print("New class1 temperature variance " + str(numpy.var(newclass1temps)))
     
 
 def plotData(data, sensor, room, col, x_label):
