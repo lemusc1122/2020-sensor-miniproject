@@ -95,9 +95,20 @@ def processData(data):
  
 # runs through lists to detect what values are in appropriate range
 def anomalyAlgorithm(officetemps, lab1temps, class1temps):
-    newofficetemps = [i for i in officetemps if i<22.5 and i>18.5]
-    newlab1temps = [i for i in lab1temps if i<22 and i>18]
-    newclass1temps = [i for i in class1temps if i<22 and i>18]
+    
+    #means from original data
+    officetempsMean = numpy.mean(officetemps)
+    lab1tempsMean = numpy.mean(lab1temps)
+    class1tempsMean = numpy.mean(class1temps)
+    #std dev from original data
+    officetempsStd = numpy.std(officetemps)
+    lab1tempsStd = numpy.std(lab1temps)
+    class1tempsStd = numpy.std(class1temps)
+    #new list of room temps
+    newofficetemps = [i for i in officetemps if i<(officetempsMean + officetempsStd)  and i>(officetempsMean - officetempsStd)]
+    newlab1temps = [i for i in lab1temps if i<(lab1tempsMean + lab1tempsStd) and i>(lab1tempsMean - lab1tempsStd)]
+    newclass1temps = [i for i in class1temps if i<(class1tempsMean + class1tempsStd) and i>(class1tempsMean - class1tempsStd)]
+    
     print("Number of data for new office list " + str(len(newofficetemps)))
     print("Numbeer of data for new lab1 list " + str(len(newlab1temps)))
     print("Number of data for new class1 list " + str(len(newclass1temps)))
