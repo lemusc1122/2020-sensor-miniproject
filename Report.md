@@ -34,5 +34,7 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     print("New class1 temperature mean " + str(numpy.mean(newclass1temps)))
     print("New class1 temperature median " + str(numpy.median(newclass1temps)))
     print("New class1 temperature variance " + str(numpy.var(newclass1temps)))
-    
+```
+Does a persistent change in temperature always indicate a failed sensor? 
+No. There may be some instances where a sensor just needs to be recalibrated or 
 ## Task 4: 
