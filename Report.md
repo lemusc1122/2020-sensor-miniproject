@@ -37,8 +37,8 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
 ```
 Does a persistent change in temperature always indicate a failed sensor? 
 
-No. There may be some instances where a sensor just needs to be recalibrated. However once there are changes that are a 
-standard deviation or more away from the mean then it should be worrysome. 
+    No. There may be some instances where a sensor just needs to be recalibrated. However once there are changes that are a 
+    standard deviation or more away from the mean then it should be worrysome. 
 
 What are possible bounds on temperature for each room type?
 ## Task 4: 
