@@ -42,5 +42,5 @@ Does a persistent change in temperature always indicate a failed sensor?
 
 What are possible bounds on temperature for each room type?
 
-    According to the [Canadian Centre for Occupational Health and Safety] (https://www.google.com/search?rlz=1C5CHFA_enUS806US806&sxsrf=ALeKk012lAJgZbobkG26_-zwjrgepGooEg%3A1599788293932&ei=BdVaX6nHOPyKytMP28WykAE&q=room+temp+for+office+in+c&oq=room+temp+for+office+in+c&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB46BAgAEEc6BQghEKABOgYIABAWEB46BQghEJIDUIscWIkoYNUqaABwAXgAgAF7iAGTBJIBAzEuNJgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjp3ebn-9_rAhV8hXIEHduiDBIQ4dUDCA0&uact=5)
+   According to the [Canadian Centre for Occupational Health and Safety] (https://www.google.com/search?rlz=1C5CHFA_enUS806US806&sxsrf=ALeKk012lAJgZbobkG26_-zwjrgepGooEg%3A1599788293932&ei=BdVaX6nHOPyKytMP28WykAE&q=room+temp+for+office+in+c&oq=room+temp+for+office+in+c&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB46BAgAEEc6BQghEKABOgYIABAWEB46BQghEJIDUIscWIkoYNUqaABwAXgAgAF7iAGTBJIBAzEuNJgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjp3ebn-9_rAhV8hXIEHduiDBIQ4dUDCA0&uact=5).
 ## Task 4: 
