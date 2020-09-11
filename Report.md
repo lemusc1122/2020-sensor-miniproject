@@ -2,7 +2,7 @@
 ## Task 1: Code I added is in sp_iotsim.client folder in client.py file
 ## Task 2: 
 ## Task 3: 
-Code to detect anomalies in original data file:
+**Code to detect anomalies in original data file:**
 ```python 
 def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     #means from original data
