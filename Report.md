@@ -43,8 +43,8 @@ Does a persistent change in temperature always indicate a failed sensor?
 What are possible bounds on temperature for each room type?
 
 According to the [Canadian Centre for Occupational Health and Safety](https://www.google.com/search?rlz=1C5CHFA_enUS806US806&sxsrf=ALeKk012lAJgZbobkG26_-zwjrgepGooEg%3A1599788293932&ei=BdVaX6nHOPyKytMP28WykAE&q=room+temp+for+office+in+c&oq=room+temp+for+office+in+c&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB46BAgAEEc6BQghEKABOgYIABAWEB46BQghEJIDUIscWIkoYNUqaABwAXgAgAF7iAGTBJIBAzEuNJgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjp3ebn-9_rAhV8hXIEHduiDBIQ4dUDCA0&uact=5) the optimum temperature in the office setting is 24.5C with an acceptable range of 23C-26C.
-   
-According to the [Wikipedia-Comfort temperatures](https://en.wikipedia.org/wiki/Talk%3ARoom_temperature#:~:text=20%C2%B0C%20to%2025,listed%20on%20many%20pharmaceutical%20products.) the optimum temperature in the room setting is 22C with an acceptable range of 20C-24C.
+    
+According to the [Wikipedia-Temperature and Pharmaceutical Science](https://en.wikipedia.org/wiki/Talk%3ARoom_temperature#:~:text=20%C2%B0C%20to%2025,listed%20on%20many%20pharmaceutical%20products.) the optimum temperature in the room setting is 22C with an acceptable range of 20C-24C.
     
 According to the [SensoScientific](https://www.sensoscientific.com/blog-maintain-laboratory-temperature-humidity/#:~:text=In%20the%20United%20States%2C%20the,Other%20standards%20exist.) the optimum temperature in the office setting is 22.5C with an acceptable range of 20C-25C.
 ## Task 4: 
