@@ -130,6 +130,7 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     print("New class1 temperature variance " + str(numpy.var(newclass1temps)))
     print("")
     print('Anomalous data written to "anomalies.txt"')
+    
     file = open("anomalies.txt", mode = "w")
     file.write("Office:\n")
     for l in officetempanomalies:
@@ -140,8 +141,8 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     file.write("Class1:\n")
     for l in class1tempanomalies:
         file.write(str(l) + "\n")
-    file.close()
-        
+    file.close(
+    
 
 def plotData(data, sensor, room, col, x_label):
     points = []
@@ -177,39 +178,7 @@ plotData(data, "co2", "class1", "green", "Carbon Dioxide Concentration")
 plotData(data, "time interval", "", "black", "Time Interval (s)")
 
 
-"""OUTPUT:
 
-Office Temperature Mean: 22.885091366881266
-Office Temperature Median: 22.988913098215388
-Office Temperature Variance: 8.727166420366977
-Lab1 Temperature Mean: 20.85145474841695
-Lab1 Temperature Median: 20.991450295513076
-Lab1 Temperature Variance: 6.508854145981514
-Class1 Temperature Mean: 26.63444829610562
-Class1 Temperature Median: 26.99484254031796
-Lab1 Temperature Variance: 168.39296941160802
-
-Office Occupancy Mean: 1.9432515337423313
-Office Occupancy Median: 2.0
-Office Occupancy Variance: 2.0842029244608375
-Lab1 Occupancy Mean: 4.94574780058651
-Lab1 Occupancy Median: 5.0
-Lab1 Occupancy Variance: 4.992657871879326
-Class1 Occupancy Mean: 19.13855421686747
-Class1 Occupancy Median: 19.0
-Lab1 Occupancy Variance: 19.08020031934969
-
-Office CO2 Mean: 5.150816517713231
-Office CO2 Median: 4.743238348731594
-Office CO2 Variance: 5.461811572746369
-Lab1 CO2 Mean: 9.803131512927326
-Lab1 CO2 Median: 9.430643709425162
-Lab1 CO2 Variance: 9.526253203605721
-Class1 CO2 Mean: 30.124508334457154
-Class1 CO2 Median: 29.68571855988014
-Lab1 CO2 Variance: 29.763965249291942
-
-"""
 
 
 
