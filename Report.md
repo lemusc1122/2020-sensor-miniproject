@@ -32,7 +32,7 @@ We changed the mode to write from append so the text file ```data.txt``` didn't 
 
 
 ## Task 2
-Code for tasks 2 and 3 can be found in ```processing.py```.
+Code for tasks 2 and 3 can be found in ```processing.py```
 ** Terminal output for task 2: **
 ```sh
 Office Temperature Mean: 22.885091366881266
