@@ -49,3 +49,33 @@ According to the [Wikipedia-Temperature and Pharmaceutical Science](https://en.w
 
 According to the [SensoScientific](https://www.sensoscientific.com/blog-maintain-laboratory-temperature-humidity/#:~:text=In%20the%20United%20States%2C%20the,Other%20standards%20exist.) the optimum temperature in the office setting is 22.5C with an acceptable range of 20C-25C
 ## Task 4: 
+**Does a persistent change in temperature always indicate a failed sensor?**
+
+No. There may be some instances where a sensor just needs to be recalibrated. However once there are changes that are a 
+standard deviation or more away from the mean then it should be worrysome. 
+
+**What are possible bounds on temperature for each room type?** 
+
+According to the [Canadian Centre for Occupational Health and Safety](https://www.ccohs.ca/oshanswers/phys_agents/thermal_comfort.html#:~:text=Recommendations%20provided%20by%20CSA%20Z412,of%2020%2D23.5%C2%B0C) the optimum temperature in the office setting is 24.5C with an acceptable range of 23C-26C. 
+
+According to the [Wikipedia-Temperature and Pharmaceutical Science](https://en.wikipedia.org/wiki/Talk%3ARoom_temperature#:~:text=20%C2%B0C%20to%2025,listed%20on%20many%20pharmaceutical%20products.) the optimum temperature in the room setting is 22.5C with an acceptable range of 20C-25C.
+
+According to the [SensoScientific](https://www.sensoscientific.com/blog-maintain-laboratory-temperature-humidity/#:~:text=In%20the%20United%20States%2C%20the,Other%20standards%20exist.) the optimum temperature in the office setting is 22.5C with an acceptable range of 20C-25C
+
+
+## Task 4
+**How is this simulation a reflection of the real world?**
+
+This simulation is a great representation of the real world because in many circumstances we may have data with hundreds of data points which are outliers to the data set. There are also cases where data might be off a few unit values - for example a sensor might be transmitting data that tells us room temp is 27 degrees C when room temp may be 20 degrees C in reality. Therefore it's only a matter of skewing the data and it's mean to get a more accurate staticstical representation. This simulation gives us a glimpse into the massive amounts of data that may be coming in during a short time frame. This is crutial in devising methods that sort through all data in an efficient manner. 
+
+**How is this simulation deficient? What factors does it fail to account for?**
+
+This simulation is deficient in a couple ways. The first is that there were
+
+**How is the difficulty of initially using this Python websockets library as comapared to a compiled language e.g. C++
+
+dad
+
+**Would it be better to have the server poll the sensors, or the sensors reach out to the server when they have data?
+
+Perhaps the most efficient method would be to have the server poll the sensor at some frequency so that the server is at less risk of crashing from too much data. If the server polls the sensors then there is a set frequency at which the server polls the sensors. The downsides to this is that the sensors will need larger memory capacity and the server is at risk of being flooded with data if say there was a fluctuation of data. If the sensors reach out to the servers when they have data then there would be constant communication with the server which means that there is more eneergy consumed and the server is constantly running analysis on the data. 
