@@ -141,7 +141,7 @@ def anomalyAlgorithm(officetemps, lab1temps, class1temps):
     file.write("Class1:\n")
     for l in class1tempanomalies:
         file.write(str(l) + "\n")
-    file.close(
+    file.close()
     
 
 def plotData(data, sensor, room, col, x_label):
