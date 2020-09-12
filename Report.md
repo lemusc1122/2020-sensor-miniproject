@@ -72,10 +72,10 @@ This simulation is a great representation of the real world because in many circ
 
 This simulation is deficient in a couple ways. The first is that there were
 
-**How is the difficulty of initially using this Python websockets library as comapared to a compiled language e.g. C++
+**How is the difficulty of initially using this Python websockets library as comapared to a compiled language e.g. C++**
 
 dad
 
-**Would it be better to have the server poll the sensors, or the sensors reach out to the server when they have data?
+**Would it be better to have the server poll the sensors, or the sensors reach out to the server when they have data?**
 
 Perhaps the most efficient method would be to have the server poll the sensor at some frequency so that the server is at less risk of crashing from too much data. If the server polls the sensors then there is a set frequency at which the server polls the sensors. The downsides to this is that the sensors will need larger memory capacity and the server is at risk of being flooded with data if say there was a fluctuation of data. If the sensors reach out to the servers when they have data then there would be constant communication with the server which means that there is more eneergy consumed and the server is constantly running analysis on the data. 
