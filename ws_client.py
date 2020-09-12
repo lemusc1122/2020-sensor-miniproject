@@ -17,6 +17,8 @@ import asyncio
 
 from sp_iotsim.client import main
 
+from pathlib import Path
+
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description="WebSocket client")
@@ -30,8 +32,11 @@ if __name__ == "__main__":
         default=100000,
     )
     P = p.parse_args()
-
+    
     try:
         asyncio.run(main(P.port, P.host, P.max_packets, P.log))
+        
     except KeyboardInterrupt:
-        print(P.log)
+       print(P.log)
+       
+
