@@ -83,7 +83,7 @@ New class1 temperature variance 5.6935895199010504
 No. There may be some instances where a sensor just needs to be recalibrated. Keeping track of means over time to see if its drifting is the best way to tell if recallibration is needed or if some factors are not accounted for. 
 
 **What are possible bounds on temperature for each room type?** 
-use our mean and standard deviaiton
+
 According to the [Canadian Centre for Occupational Health and Safety](https://www.ccohs.ca/oshanswers/phys_agents/thermal_comfort.html#:~:text=Recommendations%20provided%20by%20CSA%20Z412,of%2020%2D23.5%C2%B0C) the optimum temperature in the office setting is 24.5C with an acceptable range of 23C-26C. In this case the office mean is 22.99C - or about 23C - with a standard deviation of 0.8 so our bounds would be from 22.2C to 23.8C.
 
 According to the [SensoScientific](https://www.sensoscientific.com/blog-maintain-laboratory-temperature-humidity/#:~:text=In%20the%20United%20States%2C%20the,Other%20standards%20exist.) the optimum temperature in the lab setting is 22.5C with an acceptable range of 20C-25C. In this case the new lab1 mean is 20.99C - or about 21C - with a standard deviation of 0.5C so our bounds would be from 20.5C to 21.5C.
