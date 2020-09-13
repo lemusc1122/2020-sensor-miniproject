@@ -7,7 +7,7 @@
 ## Task 3
 **Code to detect anomalies in original data file:**
 
-The code below if a function which takes three inputs - officetemps, lab1temps and class1temps. New variables were created to store the means and standard deviations of the officetemps, lab1temps and class1temps - which was created in the 'processing.py' file. Afterwards, a new list of temperatures was created using the '[i for i in <file> if i<(value) and i>(value)] which would keep any values that were between the mean minus standard deviation and mean plus standard deviation. The code proceeds by printing out the number of data points in the new room list as well as calculating what the new mean, median and variance of each room is with the anomalies gone. Finally the anomalies are written to a txt file and classified as either office,lab1 or class1 anomalies. 
+The code below if a function which takes three inputs - officetemps, lab1temps and class1temps. New variables were created to store the means and standard deviations of the officetemps, lab1temps and class1temps - which was created in the 'processing.py' file. Afterwards, a new list of temperatures was created using the '[i for i in (listvariable) if i<(value) and i>(value)] which would keep any values that were between the mean minus standard deviation and mean plus standard deviation. The code proceeds by printing out the number of data points in the new room list as well as calculating what the new mean, median and variance of each room is with the anomalies gone. Finally the anomalies are written to a txt file and classified as either office,lab1 or class1 anomalies. 
     
 ```python 
 def anomalyAlgorithm(officetemps, lab1temps, class1temps):
